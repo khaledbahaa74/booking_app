@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_36355592_222059529851378_5676513616044684290_n"
+    tools:context=".register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingVertical="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/registerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/AHGZLY_CINEMA"
+            android:textColor="#010830"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/registerUserMailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/USER_MAIL"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/registerUserMailInput"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:autofillHints="Email"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFEFE"
+                android:layout_marginTop="20dp"
+                android:hint="@string/Email"
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="true"
+                android:textSize="30sp"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/registerPasswordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PASSWORD"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/registerPasswordInput"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:autofillHints="Password"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:hint="@string/PASSWORD"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:textSize="30sp"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/registerConfirmPasswordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rePassword"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/registerConfirmPasswordInput"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:autofillHints="Password"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:hint="@string/rePassword"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:textSize="30sp"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/registerPhoneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Phone"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/registerPhoneInput"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:autofillHints="@android:string/emptyPhoneNumber"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:hint="@string/_01"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:textSize="20sp"
+                tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerConfirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/register"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

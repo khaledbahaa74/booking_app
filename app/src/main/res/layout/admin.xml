@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_34859846_359862482419353_5593993420447981091_n"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".admin">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/red"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Ahgzly"
+        app:titleTextColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/moviePosterInput"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="20dp"
+                android:contentDescription="poster"
+                android:onClick="openGallery"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image"
+                tools:ignore="HardcodedText,SpeakableTextPresentCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/filmNameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/film_name"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/availableSeatsInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Tickets"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="@color/red"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/seatPriceInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Price"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="@color/blue"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="25dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="45dp">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_time"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:text="@string/date"
+                android:textColor="#F5F5F5"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="25dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="45dp">
+
+            <Spinner
+                android:id="@+id/timeSpinner"
+                android:layout_width="137dp"
+                android:layout_height="48dp"
+                android:background="#A3A8A2"
+                android:dropDownWidth="wrap_content"
+                android:entries="@array/timeOptions"
+                android:spinnerMode="dropdown"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/dateSpinner"
+                android:layout_width="156dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="40dp"
+                android:background="#A3A8A2"
+                android:dropDownWidth="wrap_content"
+                android:entries="@array/dateOptions"
+                android:spinnerMode="dropdown"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="201dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="20dp"
+            android:background="#830A0A"
+            android:text="Add"
+            tools:ignore="HardcodedText" />
+
+        <ListView
+            android:id="@+id/adminList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TEAM</string>
+    <string name="register">register</string>
+    <string name="USER_MAIL">User Mail</string>
+    <string name="PASSWORD">Password</string>
+    <string name="Email">Email</string>
+    <string name="rePassword">Confirm Password</string>
+    <string name="ADMIN">ADMIN</string>
+    <string name="GUEST">GUEST</string>
+    <string name="login">login</string>
+    <string name="Phone">Phone :</string>
+    <string name="AHGZLY_CINEMA">AHGZLY CINEMA</string>
+    <string name="logo">logo</string>
+    <string name="Booking">Booking</string>
+    <string name="back">Back</string>
+    <string name="Select_Time">Select Time</string>
+    <string name="film_name">Film Name </string>
+    <string name="_01">01</string>
+    <string-array name="timeOptions">
+        <item>03:00 PM</item>
+        <item>06:00 PM</item>
+        <item>09:00 PM</item>
+        <item>12:00 AM</item>
+    </string-array>
+    <string name="date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string-array name="dateOptions">
+        <item>21/08/2021</item>
+        <item>22/08/2021</item>
+        <item>23/08/2021</item>
+        <item>24/08/2021</item>
+        <item>25/08/2021</item>
+        <item>26/08/2021</item>
+        <item>27/08/2021</item>
+        <item>28/08/2021</item>
+        <item>29/08/2021</item>
+        <item>30/08/2021</item>
+    </string-array>
+</resources>
